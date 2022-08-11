@@ -35,6 +35,12 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="dashboard">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/companies">Companies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/employees">Employees</a>
+                </li>
                 
             </ul>
             

@@ -12,9 +12,16 @@ class EmployeeController extends Controller
 {
     public function index()
     {
-        $employeedetails = Employee::paginate(5);
+        $employeedetails = Employee::paginate(3);
 
         return view('admin.employees')->with('employeedetails',$employeedetails);
+    }
+
+    public function index1()
+    {
+        $employeedetails = Employee::paginate(5);
+
+        return view('employees')->with('employeedetails',$employeedetails);
     }
 
     public function create()

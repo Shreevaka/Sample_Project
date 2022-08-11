@@ -48,6 +48,8 @@ Route::middleware(['is_admin'])->group(function(){
 });
 
 Route::get('dashboard', [App\Http\Controllers\UserController::class, 'userdashboard'])->name('dashboard');
+Route::get('/companies', [App\Http\Controllers\CompanyController::class, 'index1'])->name('companies');
+Route::get('/employees', [App\Http\Controllers\EmployeeController::class, 'index1'])->name('employees');
 
 
 

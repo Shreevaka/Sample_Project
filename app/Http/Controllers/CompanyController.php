@@ -10,9 +10,16 @@ class CompanyController extends Controller
 {
     public function index()
     {
-        $companydetails = Company::paginate(5);
+        $companydetails = Company::paginate(3);
 
         return view('admin.companies')->with('companydetails',$companydetails);
+    }
+
+    public function index1()
+    {
+        $companydetails = Company::paginate(5);
+
+        return view('companies')->with('companydetails',$companydetails);
     }
 
     public function create()
