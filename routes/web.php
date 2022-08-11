@@ -41,9 +41,8 @@ Route::middleware(['is_admin'])->group(function(){
     Route::post('/admin/editemployee', [App\Http\Controllers\EmployeeController::class, 'edit'])->name('admin.editemployee');
     Route::post('/admin/updateemployee', [App\Http\Controllers\EmployeeController::class, 'update'])->name('admin.updateemployee');
     Route::post('/admin/destroyemployee', [App\Http\Controllers\EmployeeController::class, 'destroy'])->name('admin.destroyemployee');
-    
+    Route::get('/admin/profile', [App\Http\Controllers\UserController::class, 'index1'])->name('admin.profile');
 
-    // Route::any('/admin/editdocumentpage', [App\Http\Controllers\DocumentController::class, 'admineditdocumentpage'])->name('admin.editdocumentpage');
 
 });
 

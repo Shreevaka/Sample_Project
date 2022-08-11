@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.adminmain')
 
 @section('heading')
 <h4><span class="badge badge-info"></span></h4>

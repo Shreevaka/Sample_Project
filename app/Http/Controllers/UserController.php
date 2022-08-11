@@ -36,6 +36,11 @@ class UserController extends Controller
         return view('profile');
     }
 
+    public function index1()
+    {
+        return view('admin.profile');
+    }
+
     public function changepassword(Request $request)
     {
 

@@ -40,7 +40,7 @@
                     <a class="nav-link" href="/admin/employees">Employees</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile">Profile</a>
+                    <a class="nav-link" href="/admin/profile">Profile</a>
                 </li>
             </ul>
             <div class="dropdown">
