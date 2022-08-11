@@ -34,6 +34,13 @@ Route::middleware(['is_admin'])->group(function(){
     Route::post('/admin/editcompany', [App\Http\Controllers\CompanyController::class, 'edit'])->name('admin.editcompany');
     Route::post('/admin/updatecompany', [App\Http\Controllers\CompanyController::class, 'update'])->name('admin.updatecompany');
     Route::post('/admin/destroycompany', [App\Http\Controllers\CompanyController::class, 'destroy'])->name('admin.destroycompany');
+
+    Route::get('/admin/employees', [App\Http\Controllers\EmployeeController::class, 'index'])->name('admin.employees');
+    Route::get('/admin/createemployee', [App\Http\Controllers\EmployeeController::class, 'create'])->name('admin.createemployee');
+    Route::post('/admin/storeemployee', [App\Http\Controllers\EmployeeController::class, 'store'])->name('admin.storeemployee');
+    Route::post('/admin/editemployee', [App\Http\Controllers\EmployeeController::class, 'edit'])->name('admin.editemployee');
+    Route::post('/admin/updateemployee', [App\Http\Controllers\EmployeeController::class, 'update'])->name('admin.updateemployee');
+    Route::post('/admin/destroyemployee', [App\Http\Controllers\EmployeeController::class, 'destroy'])->name('admin.destroyemployee');
     
 
     // Route::any('/admin/editdocumentpage', [App\Http\Controllers\DocumentController::class, 'admineditdocumentpage'])->name('admin.editdocumentpage');
