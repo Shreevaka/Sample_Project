@@ -34,10 +34,10 @@
                     <a class="nav-link" href="/admin/dashboard">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/Companies">Companies</a>
+                    <a class="nav-link" href="/admin/companies">Companies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/Employees">Employees</a>
+                    <a class="nav-link" href="/admin/employees">Employees</a>
                 </li>
             </ul>
             <div class="dropdown">

@@ -28,7 +28,13 @@ Route::middleware(['is_admin'])->group(function(){
 
     Route::get('admin/dashboard', [App\Http\Controllers\UserController::class, 'admindashboard'])->name('admin.dashboard');
 
-    // Route::any('/admin/alldocuments', [App\Http\Controllers\DocumentController::class, 'alldocuments'])->name('admin.alldocuments');
+    Route::get('/admin/companies', [App\Http\Controllers\CompanyController::class, 'index'])->name('admin.companies');
+    Route::get('/admin/createcompany', [App\Http\Controllers\CompanyController::class, 'create'])->name('admin.createcompany');
+    Route::post('/admin/storecompany', [App\Http\Controllers\CompanyController::class, 'store'])->name('admin.storecompany');
+    Route::post('/admin/editcompany', [App\Http\Controllers\CompanyController::class, 'edit'])->name('admin.editcompany');
+    Route::post('/admin/updatecompany', [App\Http\Controllers\CompanyController::class, 'update'])->name('admin.updatecompany');
+    Route::post('/admin/destroycompany', [App\Http\Controllers\CompanyController::class, 'destroy'])->name('admin.destroycompany');
+    
 
     // Route::any('/admin/editdocumentpage', [App\Http\Controllers\DocumentController::class, 'admineditdocumentpage'])->name('admin.editdocumentpage');
 
