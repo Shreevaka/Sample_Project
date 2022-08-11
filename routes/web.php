@@ -51,6 +51,10 @@ Route::get('dashboard', [App\Http\Controllers\UserController::class, 'userdashbo
 Route::get('/companies', [App\Http\Controllers\CompanyController::class, 'index1'])->name('companies');
 Route::get('/employees', [App\Http\Controllers\EmployeeController::class, 'index1'])->name('employees');
 
+Route::get('/profile', [App\Http\Controllers\UserController::class, 'index'])->name('profile');
+Route::any('/changepassword', [App\Http\Controllers\UserController::class, 'changepassword'])->name('changepassword');
+
+
 
 
 
